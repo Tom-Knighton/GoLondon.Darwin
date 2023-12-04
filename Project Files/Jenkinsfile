@@ -68,13 +68,13 @@ pipeline {
             script {
                 echo "Building docker image"
                 if (env.BRANCH_NAME == "main") {
-                    sh "docker build -t golondondarwin:latest -f Dockerfile.prod . --progress=plain"
-                    sh "docker save -o golondondarwin.tar golondondarwin:latest"
+                    sh "docker build -t gotraveldarwin:latest -f 'Project Files/Dockerfile.prod' . --progress=plain"
+                    sh "docker save -o gotraveldarwin.tar gotraveldarwin:latest"
                 }
 
                 if (env.BRANCH_NAME == "develop") {
-                    sh "docker build -t golondondarwindev:latest -f Dockerfile.dev . --progress=plain"
-                    sh "docker save -o golondondarwin_dev.tar golondondarwindev:latest"
+                    sh "docker build -t gotraveldarwindev:latest -f 'Project Files/Dockerfile.dev' . --progress=plain"
+                    sh "docker save -o gotraveldarwin_dev.tar gotraveldarwindev:latest"
                 }
             }
         }
@@ -91,10 +91,10 @@ pipeline {
                                 verbose: true,
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: "golondondarwin.tar",
-                                        remoteDirectory: 'GoLondon.Darwin',
+                                        sourceFiles: "travelndarwin.tar",
+                                        remoteDirectory: 'GoTravel.Darwin',
                                         execTimeout: 600000,
-                                        execCommand: './_scripts/gldarwin.sh'
+                                        execCommand: './_scripts/gtdarwin.sh'
                                     )
                                 ]
                             )
@@ -110,10 +110,10 @@ pipeline {
                                 verbose: true,
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: "golondondarwin_dev.tar",
-                                        remoteDirectory: 'GoLondon.Darwin.Dev',
+                                        sourceFiles: "gotraveldarwin_dev.tar",
+                                        remoteDirectory: 'GoTravel.Darwin.Dev',
                                         execTimeout: 600000,
-                                        execCommand: './_scripts/gldarwin_dev.sh'
+                                        execCommand: './_scripts/gtdarwin_dev.sh'
                                     )
                                 ]
                             )

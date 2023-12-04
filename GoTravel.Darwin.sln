@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoLondon.Darwin", "GoLondon.Darwin.csproj", "{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTravel.Darwin", "API/GoTravel.Darwin/GoTravel.Darwin.csproj", "{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

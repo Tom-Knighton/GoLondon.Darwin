@@ -68,12 +68,12 @@ pipeline {
             script {
                 echo "Building docker image"
                 if (env.BRANCH_NAME == "main") {
-                    sh "docker build -t gotraveldarwin:latest -f Dockerfile.prod . --progress=plain"
+                    sh "docker build -t gotraveldarwin:latest -f 'Project Files/Dockerfile.prod' . --progress=plain"
                     sh "docker save -o gotraveldarwin.tar gotraveldarwin:latest"
                 }
 
                 if (env.BRANCH_NAME == "develop") {
-                    sh "docker build -t gotraveldarwindev:latest -f Dockerfile.dev . --progress=plain"
+                    sh "docker build -t gotraveldarwindev:latest -f 'Project Files/Dockerfile.dev' . --progress=plain"
                     sh "docker save -o gotraveldarwin_dev.tar gotraveldarwindev:latest"
                 }
             }

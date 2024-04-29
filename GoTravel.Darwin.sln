@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTravel.Darwin", "API/GoTravel.Darwin/GoTravel.Darwin.csproj", "{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTravel.Darwin.Domain", "API\GoTravel.Darwin.Domain\GoTravel.Darwin.Domain.csproj", "{6F71D34D-0B75-47A0-A642-9D443065BDAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTravel.Darwin.Services", "API\GoTravel.Darwin.Services\GoTravel.Darwin.Services.csproj", "{7C573973-24AF-4D5D-A151-B80C5B5F8917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB7F1ABD-AED0-4669-A6F5-0C8F06403B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F71D34D-0B75-47A0-A642-9D443065BDAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F71D34D-0B75-47A0-A642-9D443065BDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F71D34D-0B75-47A0-A642-9D443065BDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F71D34D-0B75-47A0-A642-9D443065BDAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C573973-24AF-4D5D-A151-B80C5B5F8917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C573973-24AF-4D5D-A151-B80C5B5F8917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C573973-24AF-4D5D-A151-B80C5B5F8917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C573973-24AF-4D5D-A151-B80C5B5F8917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

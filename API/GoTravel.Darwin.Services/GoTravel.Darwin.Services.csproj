@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Amazon.S3" Version="0.31.2" />
+      <PackageReference Include="Apache.NMS.ActiveMQ" Version="2.1.0" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.1" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
+      <PackageReference Include="AWSSDK.S3" Version="3.7.307.15" />
+      <PackageReference Include="Hangfire" Version="1.8.12" />
+      <PackageReference Include="Hangfire.AspNetCore" Version="1.8.12" />
+      <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" Version="7.0.1" />
+      <PackageReference Include="Hangfire.Mongo" Version="1.10.5" />
+      <PackageReference Include="MassTransit.ActiveMQ" Version="8.2.0" />
+      <PackageReference Include="MassTransit.SerilogIntegration" Version="5.5.6" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.4" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+      <PackageReference Include="Npgsql" Version="8.0.2" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="8.0.2" />
+      <PackageReference Include="Serilog" Version="3.1.1" />
+      <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+      <PackageReference Include="Serilog.Sinks.Seq" Version="7.0.0" />
+      <PackageReference Include="SerilogTracing" Version="1.0.0" />
+      <PackageReference Include="SerilogTracing.Expressions" Version="1.0.0" />
+      <PackageReference Include="SerilogTracing.Instrumentation.AspNetCore" Version="1.0.0" />
+      <PackageReference Include="SerilogTracing.Sinks.OpenTelemetry" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GoTravel.Darwin.Domain\GoTravel.Darwin.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
